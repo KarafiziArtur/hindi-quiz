@@ -29,7 +29,8 @@ gulp.task('reload', function() {
   gulp.src(
       ['./app/public/**/*.html',
       './app/public/css/*.css',
-      './app/public/js/*.js'])
+      './app/public/js/*.js',
+      './app/public/data/*.json'])
       .pipe(connect.reload());
 });
 
@@ -105,7 +106,8 @@ gulp.task('watch', function() {
    gulp.watch([
      './app/public/**/*.html',
      './app/public/css/*.css',
-     './app/public/js/*.js'],
+     './app/public/js/*.js',
+     './app/public/data/*.json'],
      ['reload']);                                                 // Watching for LiveReload
    gulp.watch(['./app/src/libs/**/*.js'], ['js-ie', 'js-libs']);
    gulp.watch(['./app/src/**/*.jade'], ['jade']);
