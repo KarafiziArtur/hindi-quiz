@@ -1,3 +1,227 @@
 body
-  background tomato
+  background #2e2e2e
+
+#hindiQuiz
+  font-family font-pt-sans
+  font-size 16px
+  font-weight 400
+  color #fff
+
+  width 650px
+  height 650px
+  margin 0 auto
+
+  position relative
+
+  overflow hidden
+
+  background #000 url('../images/main-bg.jpg') no-repeat 0 0
+  border 5px #343434 solid
+  transition all .5s
+  .active, .inactive
+    transition left 1.5s ease-in-out
+  .active
+    left 50px
+  .intro.inactive, & .inactive.answered, progress.inactive
+    left -1350px
+
+
+h1.quiz-title
   font-family font-eng-devanagari
+  font-weight 600
+  font-size 4em
+
+  position absolute
+  top 0
+  left 205px
+  a
+    line-height 1em
+    text-decoration: none
+    color white
+
+h2
+  font-size 3.5em
+  font-weight 400
+  line-height .5em
+  margin 0
+
+h3
+  font-size 2.4em
+  line-height .5em
+  font-weight 600
+  margin 0
+
+p
+  font-size: 1.2em
+  margin-bottom 14px
+
+.btn
+  color #fff
+  text-decoration none
+  font-size: 1.4em
+
+  padding 5px 15px
+  display inline-block
+
+  background #c04b01
+
+  border none
+  border-radius 6px
+  cursor pointer
+  outline none
+
+
+// Progress
+.progress
+  text-align: center
+  width: 550px
+  position: absolute
+  top: 130px
+  left: 660px
+  div
+    position: relative
+    display: inline-block
+    width: 15px
+    height: 15px
+    margin: 5px
+    border-radius: 50%
+    background-color: rgba(255, 255, 255, .5)
+    box-shadow none
+    transition background-color 1s, box-shadow 1s
+    &.on
+      box-shadow 0 0 1px 3px #efbe5e
+      background-color: #efbe5e
+    &.answered
+      background-color: #efbe5e
+      box-shadow none
+    &.answered.incorrect
+      background-color: tomato
+
+
+// Intro
+.intro
+  text-align: center
+  position absolute
+  top 225px
+  left 660px
+  width 550px
+  p
+    margin 40px 0 30px
+  button
+    font-weight: bold
+
+// Questions
+.question
+  text-align: center
+  position absolute
+  top 240px
+  left 660px
+  width 550px
+
+.text
+  color: #000
+  font-family font-devanagari
+  font-size 3.6em
+  line-height:1.9em
+
+  position: absolute
+  top 0
+  left: 50%
+  margin: 0
+  margin-bottom 20px
+  margin-left: -65px
+
+  background-color: rgba(255, 255, 255, .8)
+  width: 130px
+  height: 130px
+
+  border-radius 50%
+
+.answer
+  font-size 1.1em
+  text-align: left
+
+  position relative
+  display inline-block
+
+  width 90px
+  padding 10px
+  margin: 0
+  margin-top 160px
+  margin-left: 7px
+  margin-right: 7px
+
+  background: rgba(0, 0, 0, .5)
+  border 3px solid rgba(238, 189, 102, .4)
+  border-radius 6px
+  &:after
+    content: ''
+    position: absolute
+    top: 11px
+    right: 5px
+    display: block
+    width: 20px
+    height: 20px
+    background: no-repeat 0 0
+    background-size: 20px 20px
+
+.answer.selected
+  border-color: #be4b16
+  &:after
+    background-image: url('../images/icon_incorrect.svg')
+
+.answer.correct
+  border-color: #459a2e
+  &:after
+    background-image: url('../images/icon_correct.svg')
+
+.question.unanswered
+  .answer
+    cursor pointer
+    &:hover
+      background: rgba(238, 189, 102, .6)
+
+.question.answered
+  .answer
+    cursor default
+
+// Feedback
+.feedback
+  font-weight: bold
+  margin-top: 10px
+  transition opacity 1.5s, margin-top 1.5s
+  visibility: hidden
+  opacity: 0
+  p
+    font-size: 1.7em
+  p.correct
+    color: darkorange
+  p.incorrect
+    color: whitesmoke
+    font-weight: 900
+    span
+      color lightcoral
+  .btn
+    margin-top: 5px
+  strong
+    color: white
+
+
+.answered .feedback
+  visibility: visible
+  opacity: 1
+  margin-top: 10px
+
+// Result
+.result
+  text-align: center
+  position: absolute
+  top: 225px
+  left: 660px
+  width: 550px
+  p
+    margin: 40px 0 30px
+  .btn
+    font-size: 1.2em
+    font-weight: 600
+    background: #59adeb

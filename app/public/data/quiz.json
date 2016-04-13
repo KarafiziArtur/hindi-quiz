@@ -1,32 +1,32 @@
 [
   {
-    letter: 'अ',
-    answers: [
-      { 'id': 0, 'text': 'a'},
-      { 'id': 1, 'text': "T'ha"},
-      { 'id': 2, 'text': 'Shha'},
-      { 'id': 3, 'text': 'Qi'}
+    "letter": "अ",
+    "answers": [
+      { "id": 0, "text": "[a]"},
+      { "id": 1, "text": "[T'ha]"},
+      { "id": 2, "text": "[Shha]"},
+      { "id": 3, "text": "[Qi]"}
     ],
-    correct: 0
+    "correct": 0
   },
   {
-    letter: 'आ',
-    answers: [
-      { 'id': 0, 'text': 'a'},
-      { 'id': 1, 'text': "Bha"},
-      { 'id': 2, 'text': 'aa'},
-      { 'id': 3, 'text': 'oii'}
+    "letter": "आ",
+    "answers": [
+      { "id": 0, "text": "[a]"},
+      { "id": 1, "text": "[Bha]"},
+      { "id": 2, "text": "[aa]"},
+      { "id": 3, "text": "[oii]"}
     ],
-    correct: 2
+    "correct": 2
   },
   {
-    letter: 'ए',
-    answers: [
-      { 'id': 0, 'text': 'uu'},
-      { 'id': 1, 'text': "e"},
-      { 'id': 2, 'text': 'Shha'},
-      { 'id': 3, 'text': 'Dha'}
+    "letter": "ए",
+    "answers": [
+      { "id": 0, "text": "[uu]"},
+      { "id": 1, "text": "[e]"},
+      { "id": 2, "text": "[Shha]"},
+      { "id": 3, "text": "[Dha]"}
     ],
-    correct: 0
+    "correct": 0
   }
 ]

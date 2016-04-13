@@ -1,15 +1,21 @@
 (() => {
 
-    "use strict";
+  "use strict";
 
-    angular.module('HindiQuiz')
-        .service('AppService', AppService);
+  angular.module('HindiQuiz')
+      .service('AppService', AppService);
 
-    AppService.$inject = [];
+  AppService.$inject = ['$http'];
 
-    function AppService(){
-        var as = this;
+  function AppService($http) {
+    var as = this;
 
+    as.getQuestions = function() {
+      return $http.get('data/quiz.json').then(function(quizData) {
+        return quizData.data;
+      });
     }
+
+  }
 
 })();

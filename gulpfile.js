@@ -24,13 +24,19 @@ gulp.task('connect', function(){
     opn('http://localhost:8888');                                 // Открытие локального сервера в браузере
 });
 
-// LiveReload при изменении HTML, CSS, JS файлов
+// LiveReload при изменении HTML и JS файлов
 gulp.task('reload', function() {
   gulp.src(
       ['./app/public/**/*.html',
-      './app/public/css/*.css',
       './app/public/js/*.js',
       './app/public/data/*.json'])
+      .pipe(connect.reload());
+});
+
+// LiveReload при изменении CSS файлов
+gulp.task('reload-css', function() {
+  gulp.src(
+      ['./app/public/css/*.css'])
       .pipe(connect.reload());
 });
 
@@ -43,7 +49,7 @@ gulp.task('js-libs', function() {
       .pipe(gulp.dest('./app/public/js/'));                       // Помещение vendor.js в соответствующую папку js
 });
 
-// LiveReload при изменении файлов JS библиотек для IE
+// LiveReload при изменении файлов JS полифилов для IE
 gulp.task('js-ie', function() {
   gulp.src([
         './app/src/libs/ie/es5-shim.min.js',
@@ -105,10 +111,10 @@ gulp.task('ts', function(){
 gulp.task('watch', function() {
    gulp.watch([
      './app/public/**/*.html',
-     './app/public/css/*.css',
      './app/public/js/*.js',
      './app/public/data/*.json'],
-     ['reload']);                                                 // Watching for LiveReload
+     ['reload']);
+   gulp.watch(['./app/public/css/*.css'],['reload-css']);                                                 // Watching for LiveReload
    gulp.watch(['./app/src/libs/**/*.js'], ['js-ie', 'js-libs']);
    gulp.watch(['./app/src/**/*.jade'], ['jade']);
    gulp.watch(['./app/src/**/*.styl'], ['stylus']);

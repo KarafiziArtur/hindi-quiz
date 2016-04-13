@@ -8,7 +8,38 @@ html(lang='en' data-ng-app='HindiQuiz')
     link(rel='stylesheet' href='css/app.css')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js')
   body(data-ng-controller='AppController as ac')
-    h1 Hindi Quiz हिन्दी वर्णमाला
+    #hindiQuiz
+      h1.quiz-title
+        a(href='/') Hindi Quiz
+      .progress(class="{{ (ac.activeQuestion > -1) ? 'active' : 'inactive' }}")
+        div(class="{{ ($index === ac.activeQuestion) ? 'on' : 'off' }} " +
+                  "{{ question.questionState === 'answered' ? 'answered' : 'unanswered' }} " +
+                  "{{ question.correctness === 'correct' ? 'correct' : 'incorrect' }}"
+            data-ng-repeat='question in ac.questions')
+      .intro(class="{{ (ac.activeQuestion > -1) ? 'inactive' : 'active' }}")
+        h2 Welcome
+        p Click begin to test your knowledge
+        button.btn(data-ng-click='ac.activeQuestion = 0') Begin
+      .question(class="{{ ($index === ac.activeQuestion) ? 'active' : 'inactive' }} " +
+                      "{{ question.questionState === 'answered' ? 'answered' : 'unanswered' }}"
+                data-ng-repeat='question in ac.questions')
+        p.text {{ question.letter }}
+        p.answer(data-ng-repeat='answer in question.answers'
+                 data-ng-click='ac.selectAnswer($parent.$index, $index)'
+                 data-ng-class='{ selected: ac.isSelected($parent.$index, $index), ' +
+                               'correct: ac.isCorrect($parent.$index, $index) }') {{ answer.text }}
+        .feedback
+          p.correct(data-ng-show='question.correctness === "correct" ') You are
+            strong  correct!
+          p.incorrect(data-ng-show='question.correctness === "incorrect" ')
+            span Oops!
+            |  That is not correct.
+          button.btn(data-ng-click='ac.selectContinue()') Continue
+      .result(class="{{ (ac.totalQuestions === ac.activeQuestion) ? 'active' : 'inactive' }}")
+        h3 Result
+        p You scored {{ ac.percentage }}% by correctly answering {{ ac.score }} of the total {{ ac.totalQuestions }} questions
+        button.btn(data-ng-click='ac.goAgain()') Go again
+
 
 
     // Scripts for IE

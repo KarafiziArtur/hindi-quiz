@@ -9,7 +9,31 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   </head>
   <body data-ng-controller="AppController as ac">
-    <h1>Hindi Quiz हिन्दी वर्णमाला</h1>
+    <div id="hindiQuiz">
+      <h1 class="quiz-title"><a href="/">Hindi Quiz</a></h1>
+      <div class="progress {{ (ac.activeQuestion &gt; -1) ? 'active' : 'inactive' }}">
+        <div data-ng-repeat="question in ac.questions" class="{{ ($index === ac.activeQuestion) ? 'on' : 'off' }} {{ question.questionState === 'answered' ? 'answered' : 'unanswered' }} {{ question.correctness === 'correct' ? 'correct' : 'incorrect' }}"></div>
+      </div>
+      <div class="intro {{ (ac.activeQuestion &gt; -1) ? 'inactive' : 'active' }}">
+        <h2>Welcome</h2>
+        <p>Click begin to test your knowledge</p>
+        <button data-ng-click="ac.activeQuestion = 0" class="btn">Begin</button>
+      </div>
+      <div data-ng-repeat="question in ac.questions" class="question {{ ($index === ac.activeQuestion) ? 'active' : 'inactive' }} {{ question.questionState === 'answered' ? 'answered' : 'unanswered' }}">
+        <p class="text">{{ question.letter }}</p>
+        <p data-ng-repeat="answer in question.answers" data-ng-click="ac.selectAnswer($parent.$index, $index)" data-ng-class="{ selected: ac.isSelected($parent.$index, $index), correct: ac.isCorrect($parent.$index, $index) }" class="answer">{{ answer.text }}</p>
+        <div class="feedback">
+          <p data-ng-show="question.correctness === &quot;correct&quot; " class="correct">You are<strong> correct!</strong></p>
+          <p data-ng-show="question.correctness === &quot;incorrect&quot; " class="incorrect"><span>Oops!</span> That is not correct.</p>
+          <button data-ng-click="ac.selectContinue()" class="btn">Continue</button>
+        </div>
+      </div>
+      <div class="result {{ (ac.totalQuestions === ac.activeQuestion) ? 'active' : 'inactive' }}">
+        <h3>Result</h3>
+        <p>You scored {{ ac.percentage }}% by correctly answering {{ ac.score }} of the total {{ ac.totalQuestions }} questions</p>
+        <button data-ng-click="ac.goAgain()" class="btn">Go again</button>
+      </div>
+    </div>
     <!-- Scripts for IE--><!--[if lt IE 9]>
     <script src="js/ie.js"></script><![endif]-->
     <!-- User Scripts-->

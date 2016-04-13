@@ -1,0 +1,59 @@
+@media screen and (max-width: 650px)
+  body
+    padding: 0
+    margin: 0
+  #hindiQuiz
+    width: 320px
+    background-size: cover
+    background-position: center center
+    h1
+      width: 300px
+      font-size: 1.3em
+      top: 25px
+      left: 25px
+    h2
+      margin: 0
+    h3
+      font-size: 2.2em
+      margin-bottom: 15px
+    .progress
+      width: 300px
+      top: 90px
+      left: 730px
+      &.active
+        left: 10px
+      div
+        width: 10px
+        height: 10px
+        margin-right: 5px
+    .intro
+      width: 300px
+      top: 135px
+      left: 10px
+    .question
+      padding-top 160px
+      width: 300px
+      top: 135px
+      left: 730px
+      .text
+        font-size: 4.4em
+        margin-bottom: 15px
+        line-height: 1.6em
+      .answer
+        font-size: 1em
+        padding: 5px 10px
+        margin: 0 5px 10px
+        &:after
+          top: 6px
+          right: 5px
+    .result
+      width: 300px
+      top: 150px
+      left: 730px
+      .btn
+        margin-bottom: 20px
+
+    .active
+      left: 10px
+    .intro.inactive, & .inactive.answered, progress.inactive
+      left -750px
