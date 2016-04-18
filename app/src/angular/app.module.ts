@@ -22,7 +22,7 @@
     });
 
     ac.toSpeak = function (fileName) {
-      var audio = new Audio('/media/devanagari/' + fileName);
+      var audio = new Audio('media/devanagari/' + fileName);
       audio.play();
     };
 
@@ -37,7 +37,7 @@
 
         if(aIndex === correctAnswer) {
           
-          var audio = new Audio('/media/success.wav');
+          var audio = new Audio('media/success.wav');
           audio.play();
           setTimeout(function() {
             ac.toSpeak(ac.questions[qIndex].answers[aIndex].audio);
@@ -48,7 +48,7 @@
 
         } else {
 
-          var audio = new Audio('/media/error.wav');
+          var audio = new Audio('media/error.wav');
           audio.play();
           ac.questions[qIndex].correctness = 'incorrect';
 
