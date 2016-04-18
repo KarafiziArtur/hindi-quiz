@@ -18,7 +18,7 @@
             ac.totalQuestions = ac.questions.length;
         });
         ac.toSpeak = function (fileName) {
-            var audio = new Audio('/media/devanagari/' + fileName);
+            var audio = new Audio('media/devanagari/' + fileName);
             audio.play();
         };
         ac.selectAnswer = function (qIndex, aIndex) {
@@ -28,7 +28,7 @@
                 var correctAnswer = ac.questions[qIndex].correct;
                 ac.questions[qIndex].correctAnswer = correctAnswer;
                 if (aIndex === correctAnswer) {
-                    var audio = new Audio('/media/success.wav');
+                    var audio = new Audio('media/success.wav');
                     audio.play();
                     setTimeout(function () {
                         ac.toSpeak(ac.questions[qIndex].answers[aIndex].audio);
@@ -37,7 +37,7 @@
                     ac.score += 1;
                 }
                 else {
-                    var audio = new Audio('/media/error.wav');
+                    var audio = new Audio('media/error.wav');
                     audio.play();
                     ac.questions[qIndex].correctness = 'incorrect';
                 }

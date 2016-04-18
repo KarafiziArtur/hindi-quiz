@@ -25,7 +25,7 @@
       var audio = new Audio('media/devanagari/' + fileName);
       audio.play();
     };
-
+    
     ac.selectAnswer = function(qIndex, aIndex) {
       let questionState = ac.questions[qIndex].questionState;
 
