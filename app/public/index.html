@@ -21,8 +21,8 @@
       </div>
       <div data-ng-repeat="question in ac.questions" class="question {{ ($index === ac.activeQuestion) ? 'active' : 'inactive' }} {{ question.questionState === 'answered' ? 'answered' : 'unanswered' }}">
         <p class="text">{{ question.letter }}</p>
-        <div data-ng-repeat="answer in question.answers " class="answer-wrap">
-          <p data-ng-click="ac.selectAnswer($parent.$index, $index)" data-ng-class="{ selected: ac.isSelected($parent.$index, $index), correct: ac.isCorrect($parent.$index, $index) }" class="answer">{{ answer.text }}</p>
+        <div data-ng-repeat="answer in question.answers | orderBy:&quot;rank&quot; " class="answer-wrap">
+          <p data-ng-click="ac.selectAnswer($parent.$index, $index, answer.id)" data-ng-class="{ selected: ac.isSelected($parent.$index, answer.id), correct: ac.isCorrect($parent.$index, answer.id) }" class="answer">{{ answer.text }}</p>
           <div data-ng-click="ac.toSpeak(answer.audio)" class="speaker"></div>
         </div>
         <div class="feedback">

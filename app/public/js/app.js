@@ -5,8 +5,8 @@
     'use strict';
     angular.module('HindiQuiz', [])
         .controller('AppController', AppController);
-    AppController.$inject = ['AppService'];
-    function AppController(AppService) {
+    AppController.$inject = ['AppService', '$window'];
+    function AppController(AppService, $window) {
         var ac = this;
         ac.score = 0;
         ac.activeQuestion = -1;
@@ -16,18 +16,24 @@
         AppService.getQuestions().then(function (quizData) {
             ac.questions = quizData;
             ac.totalQuestions = ac.questions.length;
+            angular.forEach(ac.questions, function (item) {
+                angular.forEach(item.answers, function (answer) {
+                    answer.rank = 0.5 - $window.Math.random();
+                });
+            });
         });
         ac.toSpeak = function (fileName) {
             var audio = new Audio('media/devanagari/' + fileName);
             audio.play();
         };
-        ac.selectAnswer = function (qIndex, aIndex) {
+        ac.selectAnswer = function (qIndex, aIndex, aId) {
             var questionState = ac.questions[qIndex].questionState;
             if (questionState !== 'answered') {
-                ac.questions[qIndex].selectedAnswer = aIndex;
+                ac.questions[qIndex].selectedAnswer = aId;
+                console.log('', aId);
                 var correctAnswer = ac.questions[qIndex].correct;
                 ac.questions[qIndex].correctAnswer = correctAnswer;
-                if (aIndex === correctAnswer) {
+                if (aId === correctAnswer) {
                     var audio = new Audio('media/success.wav');
                     audio.play();
                     setTimeout(function () {
@@ -45,11 +51,11 @@
             }
             ac.percentage = ((ac.score / ac.totalQuestions) * 100).toFixed(1);
         };
-        ac.isSelected = function (qIndex, aIndex) {
-            return ac.questions[qIndex].selectedAnswer === aIndex;
+        ac.isSelected = function (qIndex, aId) {
+            return ac.questions[qIndex].selectedAnswer === aId;
         };
-        ac.isCorrect = function (qIndex, aIndex) {
-            return ac.questions[qIndex].correctAnswer === aIndex;
+        ac.isCorrect = function (qIndex, aId) {
+            return ac.questions[qIndex].correctAnswer === aId;
         };
         ac.selectContinue = function () {
             return ac.activeQuestion++;
