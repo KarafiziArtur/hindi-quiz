@@ -2,31 +2,421 @@
   {
     "letter": "अ",
     "answers": [
-      { "id": 0, "text": "[a]"},
-      { "id": 1, "text": "[T'ha]"},
-      { "id": 2, "text": "[Shha]"},
-      { "id": 3, "text": "[Qi]"}
+      { "id": 0, "text": "[a /ə/ or /ä/]", "audio": "a.wav"},
+      { "id": 1, "text": "[na /nə/]", "audio": "na(small).wav"},
+      { "id": 2, "text": "[ō /o:/]", "audio": "o.wav"},
+      { "id": 3, "text": "[ū /u:/]", "audio": "oo.wav"}
     ],
     "correct": 0
   },
   {
     "letter": "आ",
     "answers": [
-      { "id": 0, "text": "[a]"},
-      { "id": 1, "text": "[Bha]"},
-      { "id": 2, "text": "[aa]"},
-      { "id": 3, "text": "[oii]"}
+      { "id": 0, "text": "[au /əu/ or /au/]", "audio": "au.wav"},
+      { "id": 1, "text": "[cha /cʰə/]", "audio": "cha.wav"},
+      { "id": 2, "text": "[ā /ä:/]", "audio": "aa.wav"},
+      { "id": 3, "text": "[ō /o:/]", "audio": "o.wav"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "इ",
+    "answers": [
+      { "id": 0, "text": "[e /e:/]", "audio": "e.wav"},
+      { "id": 1, "text": "[ha /ɦə/]", "audio": "ha.wav"},
+      { "id": 2, "text": "[Da /ɖə/]", "audio": "Da.wav"},
+      { "id": 3, "text": "[i /i/]", "audio": "i.wav"}
+    ],
+    "correct": 3
+  },
+  {
+    "letter": "ई",
+    "answers": [
+      { "id": 0, "text": "[e /e:/]", "audio": "e.wav"},
+      { "id": 1, "text": "[ī /i:/]", "audio": "ee.wav"},
+      { "id": 2, "text": "[Dha /ɖʱə/]", "audio": "Dha.wav"},
+      { "id": 3, "text": "[ai /əi/ or /ai/]", "audio": "ai.wav"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "उ",
+    "answers": [
+      { "id": 0, "text": "[ō /o:/]", "audio": "o.wav"},
+      { "id": 1, "text": "[u /u/]", "audio": "u.wav"},
+      { "id": 2, "text": "[jha /ɟʱə/]", "audio": "jha.wav"},
+      { "id": 3, "text": "[e /e:/]", "audio": "e.wav"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "ऊ",
+    "answers": [
+      { "id": 0, "text": "[ū /u:/]", "audio": "oo.wav"},
+      { "id": 1, "text": "[ja /ɟə/]", "audio": "ja.wav"},
+      { "id": 2, "text": "[au /əu/ or /au/]", "audio": "au.wav"},
+      { "id": 3, "text": "[ka /kə/]", "audio": "ka.wav"}
+    ],
+    "correct": 0
+  },
+  {
+    "letter": "ऋ",
+    "answers": [
+      { "id": 0, "text": "[kha /kʰə/]", "audio": "kha.wav"},
+      { "id": 1, "text": "[pha /pʰə/]", "audio": "pha.wav"},
+      { "id": 2, "text": "[ṛ /ṛ/]", "audio": "ri.wav"},
+      { "id": 3, "text": "[ja /ɟə/]", "audio": "ja.wav"}
     ],
     "correct": 2
   },
   {
     "letter": "ए",
     "answers": [
-      { "id": 0, "text": "[uu]"},
-      { "id": 1, "text": "[e]"},
-      { "id": 2, "text": "[Shha]"},
-      { "id": 3, "text": "[Dha]"}
+      { "id": 0, "text": "[na /nə/]", "audio": "na(small).wav"},
+      { "id": 1, "text": "[cha /cʰə/]", "audio": "cha.wav"},
+      { "id": 2, "text": "[ā /ä:/]", "audio": "aa.wav"},
+      { "id": 3, "text": "[e /e:/]", "audio": "e.wav"}
+    ],
+    "correct": 3
+  },
+  {
+    "letter": "ऐ",
+    "answers": [
+      { "id": 0, "text": "[ai /əi/ or /ai/]", "audio": "ai.wav"},
+      { "id": 1, "text": "[u /u/]", "audio": "u.wav"},
+      { "id": 2, "text": "[ō /o:/]", "audio": "o.wav"},
+      { "id": 3, "text": "[ta /t̪ə/]", "audio": "ta(small).wav"}
     ],
     "correct": 0
+  },
+  {
+    "letter": "ओ",
+    "answers": [
+      { "id": 0, "text": "[bha /bʱə/]", "audio": "bha.wav"},
+      { "id": 1, "text": "[ga /gə/]", "audio": "ga.wav"},
+      { "id": 2, "text": "[ō /o:/]", "audio": "o.wav"},
+      { "id": 3, "text": "[ū /u:/]", "audio": "oo.wav"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "औ",
+    "answers": [
+      { "id": 0, "text": "[ya /jə/]", "audio": "ya.wav"},
+      { "id": 1, "text": "[Na /ɳə/]", "audio": "Na.wav"},
+      { "id": 2, "text": "[ī /i:/]", "audio": "ee.wav"},
+      { "id": 3, "text": "[au /əu/ or /au/]", "audio": "au.wav"}
+    ],
+    "correct": 3
+  },
+  {
+    "letter": "क",
+    "answers": [
+      { "id": 0, "text": "[kha /kʰə/]", "audio": "kha.wav"},
+      { "id": 1, "text": "[ka /kə/]", "audio": "ka.wav"},
+      { "id": 2, "text": "[la /lə/]", "audio": "la.wav"},
+      { "id": 3, "text": "[pha /pʰə/]", "audio": "pha.wav"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "ख",
+    "answers": [
+      { "id": 0, "text": "[cha /cʰə/]", "audio": "cha.wav"},
+      { "id": 1, "text": "[ka /kə/]", "audio": "ka.wav"},
+      { "id": 2, "text": "[kha /kʰə/]", "audio": "kha.wav"},
+      { "id": 3, "text": "[tha /t̪ʰə/]", "audio": "tha(small).wav"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "ग",
+    "answers": [
+      { "id": 0, "text": "[ga /gə/]", "audio": "ga.wav"},
+      { "id": 1, "text": "[Na /ɳə/]", "audio": "Na.wav"},
+      { "id": 2, "text": "[na /nə/]", "audio": "na(small).wav"},
+      { "id": 3, "text": "[ma /mə/]", "audio": "ma.wav"}
+    ],
+    "correct": 0
+  },
+  {
+    "letter": "घ",
+    "answers": [
+      { "id": 0, "text": "[cha /cʰə/]", "audio": "cha.wav"},
+      { "id": 1, "text": "[gha /gʱə/]", "audio": "gha.wav"},
+      { "id": 2, "text": "[dha /d̪ʱə/]", "audio": "dha(small).wav"},
+      { "id": 3, "text": "[sha /ʃə/]", "audio": "sha(small).wav"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "च",
+    "answers": [
+      { "id": 0, "text": "[ja /ɟə/]", "audio": "ja.wav"},
+      { "id": 1, "text": "[ca /cə/]", "audio": "ca.wav"},
+      { "id": 2, "text": "[na /nə/]", "audio": "na(small).wav"},
+      { "id": 3, "text": "[pha /pʰə/]", "audio": "pha.wav"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "छ",
+    "answers": [
+      { "id": 0, "text": "[tha /t̪ʰə/]", "audio": "tha(small).wav"},
+      { "id": 1, "text": "[dha /d̪ʱə/]", "audio": "dha(small).wav"},
+      { "id": 2, "text": "[cha /cʰə/]", "audio": "cha.wav"},
+      { "id": 3, "text": "[va /ʋə/]", "audio": "va.wav"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "ज",
+    "answers": [
+      { "id": 0, "text": "[ja /ɟə/]", "audio": "ja.wav"},
+      { "id": 1, "text": "[tha /t̪ʰə/]", "audio": "tha(small).wav"},
+      { "id": 2, "text": "[ca /cə/]", "audio": "ca.wav"},
+      { "id": 3, "text": "[va /ʋə/]", "audio": "va.wav"}
+    ],
+    "correct": 0
+  },
+  {
+    "letter": "झ",
+    "answers": [
+      { "id": 0, "text": "[Da /ɖə/]", "audio": "Da.wav"},
+      { "id": 1, "text": "[jha /ɟʱə/]", "audio": "jha.wav"},
+      { "id": 2, "text": "[ha /ɦə/]", "audio": "ha.wav"},
+      { "id": 3, "text": "[ī /i:/]", "audio": "ee.wav"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "ट",
+    "answers": [
+      { "id": 0, "text": "[da /d̪ə/]", "audio": "da(small).wav"},
+      { "id": 1, "text": "[Ta /ʈə/]", "audio": "Ta.wav"},
+      { "id": 2, "text": "[Tha /ʈʰə/]", "audio": "Tha.wav"},
+      { "id": 3, "text": "[Sha /ʂə/]", "audio": "Sha.wav"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "ठ",
+    "answers": [
+      { "id": 0, "text": "[Ta /ʈə/]", "audio": "Ta.wav"},
+      { "id": 1, "text": "[Dha /ɖʱə/]", "audio": "Dha.wav"},
+      { "id": 2, "text": "[Tha /ʈʰə/]", "audio": "Tha.wav"},
+      { "id": 3, "text": "[tha /t̪ʰə/]", "audio": "tha(small).wav"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "ड",
+    "answers": [
+      { "id": 0, "text": "[i /i/]", "audio": "i.wav"},
+      { "id": 1, "text": "[ha /ɦə/]", "audio": "ha.wav"},
+      { "id": 2, "text": "[Dha /ɖʱə/]", "audio": "Dha.wav"},
+      { "id": 3, "text": "[Da /ɖə/]", "audio": "Da.wav"}
+    ],
+    "correct": 3
+  },
+  {
+    "letter": "ढ",
+    "answers": [
+      { "id": 0, "text": "[Ta /ʈə/]", "audio": "Ta.wav"},
+      { "id": 1, "text": "[Dha /ɖʱə/]", "audio": "Dha.wav"},
+      { "id": 2, "text": "[u /u/]", "audio": "u.wav"},
+      { "id": 3, "text": "[Da /ɖə/]", "audio": "Da.wav"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "ण",
+    "answers": [
+      { "id": 0, "text": "[ga /gə/]", "audio": "ga.wav"},
+      { "id": 1, "text": "[pa /pə/]", "audio": "pa.wav"},
+      { "id": 2, "text": "[Na /ɳə/]", "audio": "Na.wav"},
+      { "id": 3, "text": "[Sha /ʂə/]", "audio": "Sha.wav"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "त",
+    "answers": [
+      { "id": 0, "text": "[pa /pə/]", "audio": "pa.wav"},
+      { "id": 1, "text": "[pha /pʰə/]", "audio": "pha.wav"},
+      { "id": 2, "text": "[ta /t̪ə/]", "audio": "ta(small).wav"},
+      { "id": 3, "text": "[ca /cə/]", "audio": "ca.wav"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "थ",
+    "answers": [
+      { "id": 0, "text": "[ya /jə/]", "audio": "ya.wav"},
+      { "id": 1, "text": "[tha /t̪ʰə/]", "audio": "tha(small).wav"},
+      { "id": 2, "text": "[sa /sə/]", "audio": "sa.wav"},
+      { "id": 3, "text": "[gha /gʱə/]", "audio": "gha.wav"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "द",
+    "answers": [
+      { "id": 0, "text": "[Ta /ʈə/]", "audio": "Ta.wav"},
+      { "id": 1, "text": "[Tha /ʈʰə/]", "audio": "Tha.wav"},
+      { "id": 2, "text": "[da /d̪ə/]", "audio": "da(small).wav"},
+      { "id": 3, "text": "[ra /ɾə/]", "audio": "ra.wav"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "ध",
+    "answers": [
+      { "id": 0, "text": "[dha /d̪ʱə/]", "audio": "dha(small).wav"},
+      { "id": 1, "text": "[bha /bʱə/]", "audio": "bha.wav"},
+      { "id": 2, "text": "[gha /gʱə/]", "audio": "gha.wav"},
+      { "id": 3, "text": "[sha /ʃə/]", "audio": "sha(small).wav"}
+    ],
+    "correct": 0
+  },
+  {
+    "letter": "न",
+    "answers": [
+      { "id": 0, "text": "[ja /ɟə/]", "audio": "ja.wav"},
+      { "id": 1, "text": "[na /nə/]", "audio": "na(small).wav"},
+      { "id": 2, "text": "[Na /ɳə/]", "audio": "Na.wav"},
+      { "id": 3, "text": "[va /ʋə/]", "audio": "va.wav"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "प",
+    "answers": [
+      { "id": 0, "text": "[pa /pə/]", "audio": "pa.wav"},
+      { "id": 1, "text": "[ta /t̪ə/]", "audio": "ta(small).wav"},
+      { "id": 2, "text": "[ma /mə/]", "audio": "ma.wav"},
+      { "id": 3, "text": "[Na /ɳə/]", "audio": "Na.wav"}
+    ],
+    "correct": 0
+  },
+  {
+    "letter": "फ",
+    "answers": [
+      { "id": 0, "text": "[pha /pʰə/]", "audio": "pha.wav"},
+      { "id": 1, "text": "[la /lə/]", "audio": "la.wav"},
+      { "id": 2, "text": "[ka /kə/]", "audio": "ka.wav"},
+      { "id": 3, "text": "[Sha /ʂə/]", "audio": "Sha.wav"}
+    ],
+    "correct": 0
+  },
+  {
+    "letter": "ब",
+    "answers": [
+      { "id": 0, "text": "[va /ʋə/]", "audio": "va.wav"},
+      { "id": 1, "text": "[Da /ɖə/]", "audio": "Da.wav"},
+      { "id": 2, "text": "[ba /bə/]", "audio": "ba.wav"},
+      { "id": 3, "text": "[Dha /ɖʱə/]", "audio": "Dha.wav"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "भ",
+    "answers": [
+      { "id": 0, "text": "[jha /ɟʱə/]", "audio": "jha.wav"},
+      { "id": 1, "text": "[dha /d̪ʱə/]", "audio": "dha(small).wav"},
+      { "id": 2, "text": "[sha /ʃə/]", "audio": "sha(small).wav"},
+      { "id": 3, "text": "[bha /bʱə/]", "audio": "bha.wav"}
+    ],
+    "correct": 3
+  },
+  {
+    "letter": "म",
+    "answers": [
+      { "id": 0, "text": "[sa /sə/]", "audio": "sa.wav"},
+      { "id": 1, "text": "[bha /bʱə/]", "audio": "bha.wav"},
+      { "id": 2, "text": "[ma /mə/]", "audio": "ma.wav"},
+      { "id": 3, "text": "[ga /gə/]", "audio": "ga.wav"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "य",
+    "answers": [
+      { "id": 0, "text": "[ya /jə/]", "audio": "ya.wav"},
+      { "id": 1, "text": "[sa /sə/]", "audio": "sa.wav"},
+      { "id": 2, "text": "[pa /pə/]", "audio": "pa.wav"},
+      { "id": 3, "text": "[tha /t̪ʰə/]", "audio": "tha(small).wav"}
+    ],
+    "correct": 0
+  },
+  {
+    "letter": "र",
+    "answers": [
+      { "id": 0, "text": "[ṛ /ṛ/]", "audio": "ri.wav"},
+      { "id": 1, "text": "[Ta /ʈə/]", "audio": "Ta.wav"},
+      { "id": 2, "text": "[ra /ɾə/]", "audio": "ra.wav"},
+      { "id": 3, "text": "[sha /ʃə/]", "audio": "sha(small).wav"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "ल",
+    "answers": [
+      { "id": 0, "text": "[la /lə/]", "audio": "la.wav"},
+      { "id": 1, "text": "[gha /gʱə/]", "audio": "gha.wav"},
+      { "id": 2, "text": "[cha /cʰə/]", "audio": "cha.wav"},
+      { "id": 3, "text": "[pha /pʰə/]", "audio": "pha.wav"}
+    ],
+    "correct": 0
+  },
+  {
+    "letter": "व",
+    "answers": [
+      { "id": 0, "text": "[ba /bə/]", "audio": "ba.wav"},
+      { "id": 1, "text": "[va /ʋə/]", "audio": "va.wav"},
+      { "id": 2, "text": "[ca /cə/]", "audio": "ca.wav"},
+      { "id": 3, "text": "[ja /ɟə/]", "audio": "ja.wav"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "श",
+    "answers": [
+      { "id": 0, "text": "[bha /bʱə/]", "audio": "bha.wav"},
+      { "id": 1, "text": "[sha /ʃə/]", "audio": "sha(small).wav"},
+      { "id": 2, "text": "[dha /d̪ʱə/]", "audio": "dha(small).wav"},
+      { "id": 3, "text": "[jha /ɟʱə/]", "audio": "jha.wav"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "ष",
+    "answers": [
+      { "id": 0, "text": "[ba /bə/]", "audio": "ba.wav"},
+      { "id": 1, "text": "[pa /pə/]", "audio": "pa.wav"},
+      { "id": 2, "text": "[Sha /ʂə/]", "audio": "Sha.wav"},
+      { "id": 3, "text": "[ta /t̪ə/]", "audio": "ta(small).wav"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "स",
+    "answers": [
+      { "id": 0, "text": "[sa /sə/]", "audio": "sa.wav"},
+      { "id": 1, "text": "[ma /mə/]", "audio": "ma.wav"},
+      { "id": 2, "text": "[bha /bʱə/]", "audio": "bha.wav"},
+      { "id": 3, "text": "[ta /t̪ə/]", "audio": "ta(small).wav"}
+    ],
+    "correct": 0
+  },
+  {
+    "letter": "ह",
+    "answers": [
+      { "id": 0, "text": "[i /i/]", "audio": "i.wav"},
+      { "id": 1, "text": "[Da /ɖə/]", "audio": "Da.wav"},
+      { "id": 2, "text": "[ha /ɦə/]", "audio": "ha.wav"},
+      { "id": 3, "text": "[ī /i:/]", "audio": "ee.wav"}
+    ],
+    "correct": 2
   }
 ]

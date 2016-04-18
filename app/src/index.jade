@@ -24,10 +24,11 @@ html(lang='en' data-ng-app='HindiQuiz')
                       "{{ question.questionState === 'answered' ? 'answered' : 'unanswered' }}"
                 data-ng-repeat='question in ac.questions')
         p.text {{ question.letter }}
-        p.answer(data-ng-repeat='answer in question.answers'
-                 data-ng-click='ac.selectAnswer($parent.$index, $index)'
-                 data-ng-class='{ selected: ac.isSelected($parent.$index, $index), ' +
-                               'correct: ac.isCorrect($parent.$index, $index) }') {{ answer.text }}
+        .answer-wrap(data-ng-repeat='answer in question.answers ')
+          p.answer(data-ng-click='ac.selectAnswer($parent.$index, $index)'
+                   data-ng-class='{ selected: ac.isSelected($parent.$index, $index), ' +
+                                 'correct: ac.isCorrect($parent.$index, $index) }') {{ answer.text }}
+          .speaker(data-ng-click='ac.toSpeak(answer.audio)')
         .feedback
           p.correct(data-ng-show='question.correctness === "correct" ') You are
             strong  correct!

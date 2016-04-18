@@ -7,8 +7,8 @@ body
   font-weight 400
   color #fff
 
-  width 650px
-  height 650px
+  width 750px
+  height 750px
   margin 0 auto
 
   position relative
@@ -33,7 +33,7 @@ h1.quiz-title
 
   position absolute
   top 0
-  left 205px
+  left 255px
   a
     line-height 1em
     text-decoration: none
@@ -74,10 +74,10 @@ p
 // Progress
 .progress
   text-align: center
-  width: 550px
+  width: 650px
   position: absolute
   top: 130px
-  left: 660px
+  left: 860px
   div
     position: relative
     display: inline-block
@@ -103,8 +103,8 @@ p
   text-align: center
   position absolute
   top 225px
-  left 660px
-  width 550px
+  left 860px
+  width 650px
   p
     margin 40px 0 30px
   button
@@ -115,8 +115,9 @@ p
   text-align: center
   position absolute
   top 240px
-  left 660px
-  width 550px
+  left 860px
+  width 650px
+  padding-top 160px
 
 .text
   color: #000
@@ -137,6 +138,10 @@ p
 
   border-radius 50%
 
+.answer-wrap
+  display: inline-block
+  margin-right: 20px
+
 .answer
   font-size 1.1em
   text-align: left
@@ -144,17 +149,18 @@ p
   position relative
   display inline-block
 
-  width 90px
+  width 170px
   padding 10px
+  padding-right: 25px
   margin: 0
-  margin-top 160px
+  margin-top 10px
   margin-left: 7px
   margin-right: 7px
 
   background: rgba(0, 0, 0, .5)
   border 3px solid rgba(238, 189, 102, .4)
   border-radius 6px
-  &:after
+  &:before
     content: ''
     position: absolute
     top: 11px
@@ -167,13 +173,27 @@ p
 
 .answer.selected
   border-color: #be4b16
-  &:after
+  &:before
     background-image: url('../images/icon_incorrect.svg')
 
 .answer.correct
   border-color: #459a2e
-  &:after
+  &:before
     background-image: url('../images/icon_correct.svg')
+
+.speaker
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  width: 25px;
+  height: 25px;
+  background: rgba(255, 255, 255, .7) no-repeat center center;
+  background-size: 20px 20px;
+  background-image: url(../images/speaker.svg);
+  vertical-align: middle;
+  border-radius: 10px;
+  border: 3px solid rgba(238,189,102,.4);
+  cursor: pointer;
 
 .question.unanswered
   .answer
@@ -217,8 +237,8 @@ p
   text-align: center
   position: absolute
   top: 225px
-  left: 660px
-  width: 550px
+  left: 860px
+  width: 650px
   p
     margin: 40px 0 30px
   .btn

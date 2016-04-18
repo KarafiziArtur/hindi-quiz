@@ -114,7 +114,7 @@ gulp.task('watch', function() {
      './app/public/js/*.js',
      './app/public/data/*.json'],
      ['reload']);
-   gulp.watch(['./app/public/css/*.css'],['reload-css']);                                                 // Watching for LiveReload
+   gulp.watch(['./app/public/css/*.css'],['reload-css']);         // Watching for LiveReload
    gulp.watch(['./app/src/libs/**/*.js'], ['js-ie', 'js-libs']);
    gulp.watch(['./app/src/**/*.jade'], ['jade']);
    gulp.watch(['./app/src/**/*.styl'], ['stylus']);

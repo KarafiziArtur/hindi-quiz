@@ -1,0 +1,643 @@
+[
+  {
+    "letter": "अ",
+    "answers": [
+      { "id": 0, "text": "[a]"},
+      { "id": 1, "text": "[T'ha]"},
+      { "id": 2, "text": "[Shha]"},
+      { "id": 3, "text": "[Qi]"}
+    ],
+    "correct": 0
+  },
+  {
+    "letter": "आ",
+    "answers": [
+      { "id": 0, "text": "[a]"},
+      { "id": 1, "text": "[Bha]"},
+      { "id": 2, "text": "[aa]"},
+      { "id": 3, "text": "[oii]"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "ए",
+    "answers": [
+      { "id": 0, "text": "[Dha]"},
+      { "id": 1, "text": "[uu]"},
+      { "id": 2, "text": "[Shha]"},
+      { "id": 3, "text": "[e]"}
+    ],
+    "correct": 3
+  },
+  {
+    "letter": "ई",
+    "answers": [
+      { "id": 0, "text": "[B]"},
+      { "id": 1, "text": "[ii]"},
+      { "id": 2, "text": "[oii]"},
+      { "id": 3, "text": "[Fi]"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "ऍ",
+    "answers": [
+      { "id": 0, "text": "[Ca]"},
+      { "id": 1, "text": "[uu]"},
+      { "id": 2, "text": "[ei]"},
+      { "id": 3, "text": "[Bha]"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "ऎ",
+    "answers": [
+      { "id": 0, "text": "[uu]"},
+      { "id": 1, "text": "[ou]"},
+      { "id": 2, "text": "[Sha]"},
+      { "id": 3, "text": "[ei]"}
+    ],
+    "correct": 3
+  },
+  {
+    "letter": "ऐ",
+    "answers": [
+      { "id": 0, "text": "[ai]"},
+      { "id": 1, "text": "[u]"},
+      { "id": 2, "text": "[oi]"},
+      { "id": 3, "text": "[oii]"}
+    ],
+    "correct": 0
+  },
+  {
+    "letter": "इ",
+    "answers": [
+      { "id": 0, "text": "[Ga]"},
+      { "id": 1, "text": "[Ghi]"},
+      { "id": 2, "text": "[Shha]"},
+      { "id": 3, "text": "[i]"}
+    ],
+    "correct": 3
+  },
+  {
+    "letter": "ओ",
+    "answers": [
+      { "id": 0, "text": "[e]"},
+      { "id": 1, "text": "[Ghi]"},
+      { "id": 2, "text": "[o]"},
+      { "id": 3, "text": "[Ka]"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "ऑ",
+    "answers": [
+      { "id": 0, "text": "[Ri]"},
+      { "id": 1, "text": "[oi]"},
+      { "id": 2, "text": "[Sa]"},
+      { "id": 3, "text": "[Da]"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "ऒ",
+    "answers": [
+      { "id": 0, "text": "[Jha]"},
+      { "id": 1, "text": "[Ja]"},
+      { "id": 2, "text": "[oii]"},
+      { "id": 3, "text": "[L]"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "ऊ",
+    "answers": [
+      { "id": 0, "text": "[uu]"},
+      { "id": 1, "text": "[N'a]"},
+      { "id": 2, "text": "[Shha]"},
+      { "id": 3, "text": "[Nae]"}
+    ],
+    "correct": 0
+  },
+  {
+    "letter": "औ",
+    "answers": [
+      { "id": 0, "text": "[e]"},
+      { "id": 1, "text": "[ei]"},
+      { "id": 2, "text": "[a]"},
+      { "id": 3, "text": "[ou]"}
+    ],
+    "correct": 3
+  },
+  {
+    "letter": "उ",
+    "answers": [
+      { "id": 0, "text": "[i]"},
+      { "id": 1, "text": "[u]"},
+      { "id": 2, "text": "[o]"},
+      { "id": 3, "text": "[a]"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "ब",
+    "answers": [
+      { "id": 0, "text": "[Fi]"},
+      { "id": 1, "text": "[Va]"},
+      { "id": 2, "text": "[B]"},
+      { "id": 3, "text": "[Bha]"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "भ",
+    "answers": [
+      { "id": 0, "text": "[Ghi]"},
+      { "id": 1, "text": "[Shha]"},
+      { "id": 2, "text": "[e]"},
+      { "id": 3, "text": "[Bha]"}
+    ],
+    "correct": 3
+  },
+  {
+    "letter": "च",
+    "answers": [
+      { "id": 0, "text": "[Da]"},
+      { "id": 1, "text": "[Ca]"},
+      { "id": 2, "text": "[Chha]"},
+      { "id": 3, "text": "[Dha]"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "छ",
+    "answers": [
+      { "id": 0, "text": "[Ha]"},
+      { "id": 1, "text": "[Gha]"},
+      { "id": 2, "text": "[Chha]"},
+      { "id": 3, "text": "[Da]"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "ड",
+    "answers": [
+      { "id": 0, "text": "[a]"},
+      { "id": 1, "text": "[aa]"},
+      { "id": 2, "text": "[Bha]"},
+      { "id": 3, "text": "[Da]"}
+    ],
+    "correct": 3
+  },
+  {
+    "letter": "ढ",
+    "answers": [
+      { "id": 0, "text": "[Fa]"},
+      { "id": 1, "text": "[Dha]"},
+      { "id": 2, "text": "[Fi]"},
+      { "id": 3, "text": "[Khi]"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "फ",
+    "answers": [
+      { "id": 0, "text": "[Fa]"},
+      { "id": 1, "text": "[uu]"},
+      { "id": 2, "text": "[Sha]"},
+      { "id": 3, "text": "[Dha]"}
+    ],
+    "correct": 0
+  },
+  {
+    "letter": "फ़",
+    "answers": [
+      { "id": 0, "text": "[B]"},
+      { "id": 1, "text": "[Ka]"},
+      { "id": 2, "text": "[Fi]"},
+      { "id": 3, "text": "[u]"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "ग",
+    "answers": [
+      { "id": 0, "text": "[Ga]"},
+      { "id": 1, "text": "[aa]"},
+      { "id": 2, "text": "[Bha]"},
+      { "id": 3, "text": "[Gha]"}
+    ],
+    "correct": 0
+  },
+  {
+    "letter": "घ",
+    "answers": [
+      { "id": 0, "text": "[Da]"},
+      { "id": 1, "text": "[Gha]"},
+      { "id": 2, "text": "[Na]"},
+      { "id": 3, "text": "[Ra]"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "ग़",
+    "answers": [
+      { "id": 0, "text": "[Ri]"},
+      { "id": 1, "text": "[L]"},
+      { "id": 2, "text": "[Nae]"},
+      { "id": 3, "text": "[Ghi]"}
+    ],
+    "correct": 3
+  },
+  {
+    "letter": "ह",
+    "answers": [
+      { "id": 0, "text": "[Pa]"},
+      { "id": 1, "text": "[Qi]"},
+      { "id": 2, "text": "[Ha]"},
+      { "id": 3, "text": "[Lii]"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "ज",
+    "answers": [
+      { "id": 0, "text": "[Ja]"},
+      { "id": 1, "text": "[Ni]"},
+      { "id": 2, "text": "[Jha]"},
+      { "id": 3, "text": "[oms]"}
+    ],
+    "correct": 0
+  },
+  {
+    "letter": "झ",
+    "answers": [
+      { "id": 0, "text": "[uu]"},
+      { "id": 1, "text": "[Jha]"},
+      { "id": 2, "text": "[Va]"},
+      { "id": 3, "text": "[Ja]"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "क",
+    "answers": [
+      { "id": 0, "text": "[Za]"},
+      { "id": 1, "text": "[Ka]"},
+      { "id": 2, "text": "[Ri]"},
+      { "id": 3, "text": "[Qi]"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "ख",
+    "answers": [
+      { "id": 0, "text": "[Ma]"},
+      { "id": 1, "text": "[Shha]"},
+      { "id": 2, "text": "[Kha]"},
+      { "id": 3, "text": "[ugDha]"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "ख़",
+    "answers": [
+      { "id": 0, "text": "[Pa]"},
+      { "id": 1, "text": "[Nae]"},
+      { "id": 2, "text": "[Khi]"},
+      { "id": 3, "text": "[Ta]"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "ल",
+    "answers": [
+      { "id": 0, "text": "[L]"},
+      { "id": 1, "text": "[Ra]"},
+      { "id": 2, "text": "[Li]"},
+      { "id": 3, "text": "[Pa]"}
+    ],
+    "correct": 0
+  },
+  {
+    "letter": "ळ",
+    "answers": [
+      { "id": 0, "text": "[Sa]"},
+      { "id": 1, "text": "[uu]"},
+      { "id": 2, "text": "[Li]"},
+      { "id": 3, "text": "[Thha]"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "ऌ",
+    "answers": [
+      { "id": 0, "text": "[T'a]"},
+      { "id": 1, "text": "[Ta]"},
+      { "id": 2, "text": "[N'a]"},
+      { "id": 3, "text": "[Li]"}
+    ],
+    "correct": 3
+  },
+  {
+    "letter": "ऴ",
+    "answers": [
+      { "id": 0, "text": "[Qi]"},
+      { "id": 1, "text": "[Nae]"},
+      { "id": 2, "text": "[Lii]"},
+      { "id": 3, "text": "[uu]"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "ॡ",
+    "answers": [
+      { "id": 0, "text": "[Ma]"},
+      { "id": 1, "text": "[Lii]"},
+      { "id": 2, "text": "[Li]"},
+      { "id": 3, "text": "[Za]"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "म",
+    "answers": [
+      { "id": 0, "text": "[e]"},
+      { "id": 1, "text": "[uu]"},
+      { "id": 2, "text": "[Ma]"},
+      { "id": 3, "text": "[Na]"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "न",
+    "answers": [
+      { "id": 0, "text": "[Ra]"},
+      { "id": 1, "text": "[Na]"},
+      { "id": 2, "text": "[Ya]"},
+      { "id": 3, "text": "[Yi]"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "ङ",
+    "answers": [
+      { "id": 0, "text": "[N'a]"},
+      { "id": 1, "text": "[Ri]"},
+      { "id": 2, "text": "[Shha]"},
+      { "id": 3, "text": "[Ya]"}
+    ],
+    "correct": 0
+  },
+  {
+    "letter": "ञ",
+    "answers": [
+      { "id": 0, "text": "[Shha]"},
+      { "id": 1, "text": "[ugDhha]"},
+      { "id": 2, "text": "[Bha]"},
+      { "id": 3, "text": "[Nia]"}
+    ],
+    "correct": 3
+  },
+  {
+    "letter": "ण",
+    "answers": [
+      { "id": 0, "text": "[uu]"},
+      { "id": 1, "text": "[Sa]"},
+      { "id": 2, "text": "[Nae]"},
+      { "id": 3, "text": "[Nia]"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "ऩ",
+    "answers": [
+      { "id": 0, "text": "[Ni]"},
+      { "id": 1, "text": "[ii]"},
+      { "id": 2, "text": "[Tha]"},
+      { "id": 3, "text": "[Qi]"}
+    ],
+    "correct": 0
+  },
+  {
+    "letter": "ॐ",
+    "answers": [
+      { "id": 0, "text": "[a]"},
+      { "id": 1, "text": "[oms]"},
+      { "id": 2, "text": "[ugDha]"},
+      { "id": 3, "text": "[Tha]"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "प",
+    "answers": [
+      { "id": 0, "text": "[Pa]"},
+      { "id": 1, "text": "[Ta]"},
+      { "id": 2, "text": "[Da]"},
+      { "id": 3, "text": "[Ca]"}
+    ],
+    "correct": 0
+  },
+  {
+    "letter": "क़",
+    "answers": [
+      { "id": 0, "text": "[Ri]"},
+      { "id": 1, "text": "[Qi]"},
+      { "id": 2, "text": "[T'a]"},
+      { "id": 3, "text": "[Yi]"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "र",
+    "answers": [
+      { "id": 0, "text": "[Ni]"},
+      { "id": 1, "text": "[aa]"},
+      { "id": 2, "text": "[Ra]"},
+      { "id": 3, "text": "[ei]"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "ऋ",
+    "answers": [
+      { "id": 0, "text": "[Li]"},
+      { "id": 1, "text": "[Ta]"},
+      { "id": 2, "text": "[Ri]"},
+      { "id": 3, "text": "[ii]"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "ॠ",
+    "answers": [
+      { "id": 0, "text": "[Ri]"},
+      { "id": 1, "text": "[o]"},
+      { "id": 2, "text": "[Ra]"},
+      { "id": 3, "text": "[Za]"}
+    ],
+    "correct": 0
+  },
+  {
+    "letter": "ऱ",
+    "answers": [
+      { "id": 0, "text": "[Va]"},
+      { "id": 1, "text": "[Ri]"},
+      { "id": 2, "text": "[Ma]"},
+      { "id": 3, "text": "[Na]"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "स",
+    "answers": [
+      { "id": 0, "text": "[Sa]"},
+      { "id": 1, "text": "[Tha]"},
+      { "id": 2, "text": "[Sha]"},
+      { "id": 3, "text": "[Ya]"}
+    ],
+    "correct": 0
+  },
+  {
+    "letter": "श",
+    "answers": [
+      { "id": 0, "text": "[Qi]"},
+      { "id": 1, "text": "[Sha]"},
+      { "id": 2, "text": "[Chha]"},
+      { "id": 3, "text": "[Fi]"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "ष",
+    "answers": [
+      { "id": 0, "text": "[Pa]"},
+      { "id": 1, "text": "[aa]"},
+      { "id": 2, "text": "[Shha]"},
+      { "id": 3, "text": "[Dha]"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "ट",
+    "answers": [
+      { "id": 0, "text": "[e]"},
+      { "id": 1, "text": "[Ta]"},
+      { "id": 2, "text": "[T'ha]"},
+      { "id": 3, "text": "[Nia]"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "त",
+    "answers": [
+      { "id": 0, "text": "[Ma]"},
+      { "id": 1, "text": "[Tha]"},
+      { "id": 2, "text": "[T'a]"},
+      { "id": 3, "text": "[Li]"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "ठ",
+    "answers": [
+      { "id": 0, "text": "[Ha]"},
+      { "id": 1, "text": "[Gha]"},
+      { "id": 2, "text": "[Tha]"},
+      { "id": 3, "text": "[Bha]"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "द",
+    "answers": [
+      { "id": 0, "text": "[e]"},
+      { "id": 1, "text": "[uu]"},
+      { "id": 2, "text": "[dha]"},
+      { "id": 3, "text": "[Dha]"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "थ",
+    "answers": [
+      { "id": 0, "text": "[Sa]"},
+      { "id": 1, "text": "[T'ha]"},
+      { "id": 2, "text": "[Bha]"},
+      { "id": 3, "text": "[Dha]"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "ध",
+    "answers": [
+      { "id": 0, "text": "[Thha]"},
+      { "id": 1, "text": "[Li]"},
+      { "id": 2, "text": "[Ya]"},
+      { "id": 3, "text": "[ugDha]"}
+    ],
+    "correct": 0
+  },
+  {
+    "letter": "ड़",
+    "answers": [
+      { "id": 0, "text": "[Yi]"},
+      { "id": 1, "text": "[Ya]"},
+      { "id": 2, "text": "[ugDha]"},
+      { "id": 3, "text": "[ugDhha]"}
+    ],
+    "correct": 2
+  },
+  {
+    "letter": "ढ़",
+    "answers": [
+      { "id": 0, "text": "[ugDhha]"},
+      { "id": 1, "text": "[ugDha]"},
+      { "id": 2, "text": "[Za]"},
+      { "id": 3, "text": "[oms]"}
+    ],
+    "correct": 0
+  },
+  {
+    "letter": "व",
+    "answers": [
+      { "id": 0, "text": "[Ba]"},
+      { "id": 1, "text": "[Va]"},
+      { "id": 2, "text": "[Ra]"},
+      { "id": 3, "text": "[L]"}
+    ],
+    "correct": 1
+  },
+  {
+    "letter": "य",
+    "answers": [
+      { "id": 0, "text": "[Ya]"},
+      { "id": 1, "text": "[Na]"},
+      { "id": 2, "text": "[Za]"},
+      { "id": 3, "text": "[Qi]"}
+    ],
+    "correct": 0
+  },
+  {
+    "letter": "य़",
+    "answers": [
+      { "id": 0, "text": "[e]"},
+      { "id": 1, "text": "[Ta]"},
+      { "id": 2, "text": "[Thha]"},
+      { "id": 3, "text": "[YI]"}
+    ],
+    "correct": 3
+  },
+  {
+    "letter": "ज़",
+    "answers": [
+      { "id": 0, "text": "[Za]"},
+      { "id": 1, "text": "[Ja]"},
+      { "id": 2, "text": "[Gha]"},
+      { "id": 3, "text": "[Ya]"}
+    ],
+    "correct": 0
+  }
+
+]
