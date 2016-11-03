@@ -1,7 +1,7 @@
 {
-  "name": "idfly",
-  "description": "IDFLY'",
-  "version": "0.0.1",
+  "name": "hindiquiz",
+  "description": "Hindi quiz'",
+  "version": "0.0.2",
   "devDependencies": {
     "fs": "0.0.2",
     "gulp": "^3.9.0",

@@ -14,17 +14,20 @@
     ac.activeQuestion = -1;
     ac.activeQuestionAnswered = 0;
     ac.percentage = 0;
-    ac.rankedQuestions = [];
 
-    AppService.getQuestions().then(function(quizData) {
-      ac.questions = quizData;
-      ac.totalQuestions = ac.questions.length;
-      angular.forEach(ac.questions, function(item) {
-        angular.forEach(item.answers, function(answer) {
-          answer.rank = 0.5 - $window.Math.random();
+    function getQuestions() {
+      return AppService.getQuestions().then(function(quizData) {
+        ac.questions = quizData;
+        ac.totalQuestions = ac.questions.length;
+        angular.forEach(ac.questions, function(item) {
+          angular.forEach(item.answers, function(answer) {
+            answer.rank = 0.5 - $window.Math.random();
+          });
         });
       });
-    });
+    }
+
+    getQuestions();
 
     ac.toSpeak = function (fileName) {
       var audio = new Audio('media/devanagari/' + fileName);
@@ -36,7 +39,6 @@
 
       if(questionState !== 'answered') {
         ac.questions[qIndex].selectedAnswer = aId;
-        console.log('', aId);
         let correctAnswer = ac.questions[qIndex].correct;
 
         ac.questions[qIndex].correctAnswer = correctAnswer;
@@ -46,7 +48,7 @@
           var audio = new Audio('media/success.wav');
           audio.play();
           setTimeout(function() {
-            ac.toSpeak(ac.questions[qIndex].answers[aIndex].audio);
+            ac.toSpeak(ac.questions[qIndex].answers[aId].audio);
           }, 700);
 
           ac.questions[qIndex].correctness = 'correct';
@@ -84,10 +86,8 @@
       ac.activeQuestion = -1;
       ac.activeQuestionAnswered = 0;
       ac.percentage = 0;
-      AppService.getQuestions().then(function(quizData) {
-        ac.questions = quizData;
-        ac.totalQuestions = ac.questions.length;
-      });
+      getQuestions();
+
     };
 
   }
